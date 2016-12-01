@@ -1,0 +1,20 @@
+// defaults
+$borderWeight: 4px solid #41403E;
+
+$border: 255px 15px 255px 15px/15px 255px 15px 255px;
+
+$border2: 15px 255px 255px 15px/255px 15px 15px 255px;
+$border3: 15px 255px 15px 255px/255px 15px 255px 15px;
+$border4: 255px 20% 15px 255px/15px 255px 255px 13%;
+$border5: 255px 15px 255px 15px/15px 255px 15px 255px;
+
+$background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAIklEQVQoU2N0dLD7v//AIUYGHACnBEw9DRSgu4kGVqD7FgDP5wgJ4qx96gAAAABJRU5ErkJggg==);
+
+// Percentages don't work with rectanges very well
+// $border: 90% 6% 90% 6%/6% 90% 6% 90%;
+
+// border choices
+// $border2: 6% 90% 90% 6%/90% 6% 6% 90%;
+// $border3: 6% 90% 6% 90%/90% 6% 90% 6%;
+// $border4: 90% 20% 6% 90%/6% 90% 90% 13%;
+// $border5: 90% 6% 90% 6%/6% 90% 6% 90%;

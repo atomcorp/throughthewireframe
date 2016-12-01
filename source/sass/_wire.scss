@@ -1,0 +1,48 @@
+@mixin box($border) {
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	// top-left, top-right, bottom-right, bottom-left;
+	// border-radius: 90% 6% 90% 6%/6% 90% 6% 90%;
+	border: $border;
+
+}
+
+.custom-box {
+	@include box(4px solid #41403E);
+}
+
+.box {
+	border-radius: $border;
+	border: $borderWeight;
+}
+
+.box__2 {
+	border-radius: $border2;
+	border: $borderWeight;
+}
+
+.box__3 {
+	border-radius: $border3;
+	border: $borderWeight;
+}
+
+.box__4 {
+	border-radius: $border4;
+	border: $borderWeight;
+}
+
+.box__5 {
+	border-radius: $border5;
+	border: $borderWeight;
+}
+
+.box--varied {
+	border: $borderWeight;
+	border-radius: random(100) + % random(100) + % random(100) + % random(100) + % / random(100) + % random(100) + % random(100) + % random(100) + %;
+	height: 100px;
+	width: 100px;
+	background: red;
+}
+
+.img-placeholder {
+	background: $background;
+}
