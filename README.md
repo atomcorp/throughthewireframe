@@ -1,2 +1,2 @@
 # throughthewireframe
-Simple CSS wiframing for making hand drawn looking prototypes
+Simple CSS wireframing kit for making hand drawn looking prototypes
