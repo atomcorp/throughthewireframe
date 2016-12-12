@@ -1,0 +1,25 @@
+.img-placeholder {
+	background: $background;
+}
+
+.img--dots {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAIklEQVQoU2N0dLD7v//AIUYGHACnBEw9DRSgu4kGVqD7FgDP5wgJ4qx96gAAAABJRU5ErkJggg==);
+
+}
+
+.img--blueprint {
+	// http://lea.verou.me/css3patterns/#blueprint-grid
+	background-color:#bcdff7;
+	background-image: linear-gradient(white 2px, transparent 2px),
+	linear-gradient(90deg, white 2px, transparent 2px),
+	linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+	linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+	background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+	background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+}
+
+.img--cross {
+	background-color: #fff;
+	background-image: repeating-linear-gradient(45deg, transparent, transparent 38px, #a4ffff 38px, #a4ffff 40px),
+	repeating-linear-gradient(-45deg, transparent, transparent 38px, #a4ffff 38px, #a4ffff 40px);
+}

@@ -1,12 +1,20 @@
 // defaults
 $borderWeight: 4px solid #41403E;
 
+// Default boxes
 $border: 255px 15px 255px 15px/15px 255px 15px 255px;
-
 $border2: 15px 255px 255px 15px/255px 15px 15px 255px;
 $border3: 15px 255px 15px 255px/255px 15px 255px 15px;
 $border4: 255px 20% 15px 255px/15px 255px 255px 13%;
 $border5: 255px 15px 255px 15px/15px 255px 15px 255px;
+
+// Defualt circles
+$round: 255px 145px 255px 125px/125px 255px 145px 255px;
+$round2: 145px 255px  255px 125px/125px 145px 255px 255px;
+$round3: 255px 255px 145px 125px/125px 145px 255px 255px;
+$round4: 255px 255px 125px 145px/125px 145px 255px 255px;
+$round5: 125px 255px 145px 255px/255px 125px 255px 145px;
+
 
 $background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAIklEQVQoU2N0dLD7v//AIUYGHACnBEw9DRSgu4kGVqD7FgDP5wgJ4qx96gAAAABJRU5ErkJggg==);
 
