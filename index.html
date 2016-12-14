@@ -8,103 +8,142 @@
 	<link rel="stylesheet" href="/dist/style.css">
 </head>
 <body>
-	<div class="heading box">
+	<div class="headline box img--blueprint">
 		<h1>Through the Wireframe</h1>
 	</div>
 	
-	<h2>Summary</h2>
-	<p>Through the wireframe aims to make creating wireframes super simple.</p>
-	<p>It's just an adapted version of <a href="https://codepen.io/tmrDevelops/pen/VeRvKX">Imperfect Buttons</a> by Tiffany Rayside, so full credit to her.</p>
-	<div class="varied-default">
-		<h2>Box</h2>
-		<div class="varied-default__boxes">
-			<div class="example-box box">
-				<div class="example-box__label">.box</div>
+	<div class="section">
+		<h2 class="heading">Summary</h2>
+		<div class="summary box">
+			<p>Through the wireframe aims to make creating wireframes super simple.</p>
+			<p>It's just an adapted version of <a href="https://codepen.io/tmrDevelops/pen/VeRvKX">Imperfect Buttons</a> by Tiffany Rayside, so full credit to her.</p>
+		</div>
+
+	</div>
+
+	<div class="section">
+		<div class="varied-default">
+			<h2 class="heading">Box</h2>
+			<div class="summary box__2">
+				<p>The simplest use is to add a <code>.box</code> class to an element. </p>
+				<p>There are 5 predefined styles</p>
 			</div>
-			<div class="example-box box__2">
-				<div class="example-box__label">.box__2</div>
-			</div>
-			<div class="example-box box__3">
-				<div class="example-box__label">.box__3</div>
-			</div>
-			<div class="example-box box__4">
-				<div class="example-box__label">.box__4</div>
-			</div>
-			<div class="example-box box__5">
-				<div class="example-box__label">.box__5</div>
+			<div class="code-example">
+				<div class="varied-default__boxes">
+					<div class="example-box box">
+						<div class="example-box__label">.box</div>
+					</div>
+					<div class="example-box box__2">
+						<div class="example-box__label">.box__2</div>
+					</div>
+					<div class="example-box box__3">
+						<div class="example-box__label">.box__3</div>
+					</div>
+					<div class="example-box box__4">
+						<div class="example-box__label">.box__4</div>
+					</div>
+					<div class="example-box box__5">
+						<div class="example-box__label">.box__5</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<h2>Round</h2>
-		<div class="varied-default__boxes">
-			<div class="example-box round">
-				<div class="example-box__label">.round</div>
+	</div>
+	<div class="section">
+		<div class="varied-default">
+			<h2 class="heading">Round</h2>
+			<div class="summary box__3">
+				<p>If you want to highlight something with a more unusual shape use <code>.round</code></p>
+				<p>Again, there are 5 predefined styles</p>
 			</div>
-			<div class="example-box round__2">
-				<div class="example-box__label">.round__2</div>
+			<div class="code-example">
+				<div class="varied-default__boxes">
+					<div class="example-box round">
+						<div class="example-box__label">.round</div>
+					</div>
+					<div class="example-box round__2">
+						<div class="example-box__label">.round__2</div>
+					</div>
+					<div class="example-box round__3">
+						<div class="example-box__label">.round__3</div>
+					</div>
+					<div class="example-box round__4">
+						<div class="example-box__label">.round__4</div>
+					</div>
+					<div class="example-box round__5">
+						<div class="example-box__label">.round__5</div>
+					</div>
+				</div>
 			</div>
-			<div class="example-box round__3">
-				<div class="example-box__label">.round__3</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="image-default">
+			<h2 class="heading">Image Placeholder</h2>
+			<div class="summary box__4">
+				<p>To demonstrate an area where an image would be you can use a background</p>
 			</div>
-			<div class="example-box round__4">
-				<div class="example-box__label">.round__4</div>
+			<div class="code-example">
+				<div class="image-example__container box">
+					<div class="img-example img-placeholder">
+						
+					</div>
+					<div class="image-example__text">
+						<h4>An image</h4>
+						<p>.img--dots</p>
+					</div>
+				</div>
+				<div class="image-example__container box__2">
+					<div class="img-example img--blueprint">
+						
+					</div>
+					<div class="image-example__text">
+						<h4>An image</h4>
+						<p>.img--blueprint</p>
+					</div>
+				</div>
+				<div class="image-example__container box__3">
+					<div class="img-example img--cross">
+						
+					</div>
+					<div class="image-example__text">
+						<h4>An image</h4>
+						<p>.img--cross</p>
+					</div>
+				</div>
 			</div>
-			<div class="example-box round__5">
-				<div class="example-box__label">.round__5</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="random-default">
+			<h2 class="heading">Random (JS)</h2>
+			<div class="summary box__5">
+				<p>For the true genius, you can go crazy with a randomly generated box.</p>
+				<p>This requires the JS plugin. There are 2 settings, a filtered one and a truly random one.</p>
+			</div>
+			<div class="code-example">
+				<div class="random-default__boxes">
+					<div class="example-box box--random">
+						<div class="example-box__label">.box--random</div>
+					</div>
+					<div class="example-box box--random">
+						<div class="example-box__label">.box--random</div>
+					</div>
+					<div class="example-box box--random">
+						<div class="example-box__label">.box--random</div>
+					</div>
+					<div class="example-box box--random round--random">
+						<div class="example-box__label">.box--random <br>.round--random</div>
+					</div>
+					<div class="example-box box--random round--random">
+						<div class="example-box__label">.box--random <br>.round--random</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="image-default">
-		<h2>Image Placeholder</h2>
-		<div class="image-example__container box">
-			<div class="img-example img-placeholder">
-				
-			</div>
-			<div class="image-example__text">
-				<h4>An image</h4>
-				<p>.img--dots</p>
-			</div>
-		</div>
-		<div class="image-example__container box__2">
-			<div class="img-example img--blueprint">
-				
-			</div>
-			<div class="image-example__text">
-				<h4>An image</h4>
-				<p>.img--blueprint</p>
-			</div>
-		</div>
-		<div class="image-example__container box__3">
-			<div class="img-example img--cross">
-				
-			</div>
-			<div class="image-example__text">
-				<h4>An image</h4>
-				<p>.img--cross</p>
-			</div>
-		</div>
-	</div>
 
-	<div class="random-default">
-		<h2>Random (JS)</h2>
-		<div class="random-default__boxes">
-			<div class="example-box box--random">
-				<div class="example-box__label">.box--random</div>
-			</div>
-			<div class="example-box box--random">
-				<div class="example-box__label">.box--random</div>
-			</div>
-			<div class="example-box box--random">
-				<div class="example-box__label">.box--random</div>
-			</div>
-			<div class="example-box box--random">
-				<div class="example-box__label">.box--random</div>
-			</div>
-			<div class="example-box box--random">
-				<div class="example-box__label">.box--random</div>
-			</div>
-		</div>
-	</div>
 
 	<script src="dist/js.js"></script>
 </body>

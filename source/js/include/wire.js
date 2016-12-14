@@ -42,17 +42,24 @@ var throughTheWire = function() {
 
 	};
 
-	function _testClassName(className) {
-		if (domCache.boxes[i].className.match(/\bclassName\b/).length) {
+	function _testClassName(box, className) {
+		if (box.className.match(/\bround--random\b/)) {
 			return true;
+		} else {
+			return false;
 		}
 	}
 
 	var _run = function() {
+		// create unique class names that we'll add the the .box--random elements
 		_createClasses();
+		// create the border-radius px numbers, put in array
 		_createPoints();
+		// join the array, and make valid css
 		_joinPoints();
+		// add all the new <style> css for the classes to the head
 		_addHeadStyle();
+		// add the classes to the original DOM elements
 		_addDomClasses();
 	};
 
@@ -79,20 +86,33 @@ var throughTheWire = function() {
 		var randomNumber = 0;
 		for (var i = 0; i < settings.classes.length; i++) {
 			settings.classes[i].classPoints = [];
-			for (var x = 0; x < 8; x++) {
-				if (x > 3) {
-					randomNumber = 255 - settings.classes[i].classPoints[x - 4];
-				} else {
-					// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-					var coinFlip = Math.random();
-					if (coinFlip > 0.5 || x === 1) {
-						randomNumber = Math.random() * (55 - 10) + 0;
+
+			// Test how random should be
+			if (!_testClassName(domCache.boxes[i])) {
+
+				// Make only slightly wonky
+				for (var x = 0; x < 8; x++) {
+					if (x > 3) {
+						randomNumber = 255 - settings.classes[i].classPoints[x - 4];
 					} else {
-						randomNumber = Math.random() * (245 - 55);
-					}					
+						// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+						var coinFlip = Math.random();
+						if (coinFlip > 0.5 || x === 1) {
+							randomNumber = Math.random() * (55 - 10) + 0;
+						} else {
+							randomNumber = Math.random() * (245 - 55);
+						}					
+					}
+					settings.classes[i].classPoints.push(randomNumber.toFixed(0));
 				}
-				settings.classes[i].classPoints.push(randomNumber.toFixed(0));
+			} else {
+				// make totally random
+				for (var x = 0; x < 8; x++) {
+					randomNumber = Math.random() * (255 - 0) + 0;
+					settings.classes[i].classPoints.push(randomNumber.toFixed(0));
+				}
 			}
+			
 			// add the 'px'
 			for (var x = 0; x < settings.classes[i].classPoints.length; x++) {
 				settings.classes[i].classPoints[x] += 'px';
