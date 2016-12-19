@@ -1,11 +1,12 @@
 # Through The Wireframe
-Simple CSS wireframing kit for making hand drawn looking prototypes
+Simple CSS wireframing kit for quickly making hand drawn looking prototypes
 
-***
+*** 
 
 ### Todo list
 
-* Make example page a proper wireframe
-* Add some (free) icons, search icon
-* maybe better image placeholder
+* Make index responsive
+* Make example page better
+* Make better image placeholder
 * Change css naming, use .wire, .wire--round, .wire--js, wire--cray
+* Add some (free) icons, search icon
