@@ -1,5 +1,8 @@
+$color: #41403E;
+$contrast: #fff;
+
 // defaults
-$borderWeight: 4px solid #41403E;
+$borderWeight: 4px solid $color;
 
 // Default boxes
 $border: 255px 15px 255px 15px/15px 255px 15px 255px;

@@ -3,61 +3,114 @@
 	// top-left, top-right, bottom-right, bottom-left;
 	// border-radius: 90% 6% 90% 6%/6% 90% 6% 90%;
 	border: $border;
-
 }
 
 .custom-box {
-	@include box(4px solid #41403E);
+	@include box(4px solid $color);
 }
 
 .box {
 	border-radius: $border;
 	border: $borderWeight;
+	box-sizing: border-box;
+	&.no-border {
+		border: 0;
+	}
 }
 
 .box__2 {
 	border-radius: $border2;
 	border: $borderWeight;
+	box-sizing: border-box;
+	&.no-border {
+		border: 0;
+	}
 }
 
 .box__3 {
 	border-radius: $border3;
 	border: $borderWeight;
+	box-sizing: border-box;
+	&.no-border {
+		border: 0;
+	}
 }
 
 .box__4 {
 	border-radius: $border4;
 	border: $borderWeight;
+	box-sizing: border-box;
+	&.no-border {
+		border: 0;
+	}
 }
 
 .box__5 {
 	border-radius: $border5;
 	border: $borderWeight;
+	box-sizing: border-box;
+	&.no-border {
+		border: 0;
+	}
 }
 
 .round {
 	border-radius: $round;
 	border: $borderWeight;
+	box-sizing: border-box;
+	&.no-border {
+		border: 0;
+	}
 }
 
 .round__2 {
 	border-radius: $round2;
 	border: $borderWeight;
+	box-sizing: border-box;
+	&.no-border {
+		border: 0;
+	}
 }
 
 .round__3 {
 	border-radius: $round3;
 	border: $borderWeight;
+	box-sizing: border-box;
+	&.no-border {
+		border: 0;
+	}
 }
 
 .round__4 {
 	border-radius: $round4;
 	border: $borderWeight;
+	box-sizing: border-box;
+	&.no-border {
+		border: 0;
+	}
 }
 
 .round__5 {
 	border-radius: $round5;
 	border: $borderWeight;
+	box-sizing: border-box;
+	&.no-border {
+		border: 0;
+	}
+}
+
+.box--submit {
+	background: $contrast;
+	font-family: 'Gloria Hallelujah', cursive;
+	cursor: pointer;
+	&:hover {
+		color: $contrast;
+		background: $color;
+	}
+}
+
+.box--row {
+	margin: 0 -4px;
 }
 
 .box--varied {

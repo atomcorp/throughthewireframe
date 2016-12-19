@@ -1,4 +1,4 @@
-body {
+.example-page {
 	margin: 0 15px;
 	// https://gist.github.com/kconragan/2501349
 	background-color: #f1f2f3;
@@ -8,12 +8,13 @@ body {
 	padding: 0 0 120px 0;
 	text-align: center;
 	// end 
+	p {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 24px;
+	}
 }
 
-p {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 24px;
-}
+
 
 .headline {
 	font-size: 36px;
