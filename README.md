@@ -3,7 +3,7 @@ Simple CSS wireframing kit for quickly making hand drawn looking prototypes
 
 *** 
 
-![example of a wireframe]()
+![example of a wireframe](https://github.com/atomcorp/throughthewireframe/master/source/img/facebook-example.jpg)
 
 ***
 
