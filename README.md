@@ -3,7 +3,7 @@ Simple CSS wireframing kit for quickly making hand drawn looking prototypes
 
 *** 
 
-![example of a wireframe](https://github.com/atomcorp/throughthewireframe/master/source/img/facebook-example.jpg)
+![example of a wireframe](https://github.com/atomcorp/throughthewireframe/raw/master/source/img/facebook-example.jpg)
 
 ***
 
@@ -16,6 +16,7 @@ The benefit of Through the Wireframe is it doesn't care what you html, css or js
 ## Guide
 
 View a simple guide at [https://atomcorp.github.io/throughthewireframe](https://atomcorp.github.io/throughthewireframe/).
+
 View an example of a complete page (of a a facebook profile) at [https://atomcorp.github.io/throughthewireframe/facebook](https://atomcorp.github.io/throughthewireframe/facebook).
 
 ***
