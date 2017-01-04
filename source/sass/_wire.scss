@@ -126,3 +126,15 @@
 	border: $borderWeight;
 
 }
+
+// used in a span and the < > (greater than, less than)
+// greater than points up initially
+// less than points down initially
+.direction-arrow {
+    transform: rotate(270deg);
+    display: inline-block;
+}
+
+.active .direction-arrow {
+    transform: rotate(90deg);
+}
