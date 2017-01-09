@@ -140,7 +140,7 @@
 }
 
 // input & select don't inherit body font
-select, input, option {
+select, input, option, button, textarea {
 	font-family: $font;
 	font-weight: 800;
 	color: $color;
