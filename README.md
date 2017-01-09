@@ -17,7 +17,7 @@ The benefit of Through the Wireframe is it doesn't care what you html, css or js
 
 View a simple guide at [https://atomcorp.github.io/throughthewireframe](https://atomcorp.github.io/throughthewireframe/).
 
-View an example of a complete page (of a a facebook profile) at [https://atomcorp.github.io/throughthewireframe/facebook](https://atomcorp.github.io/throughthewireframe/facebook).
+View an example of a complete example page (a facebook profile) at [https://atomcorp.github.io/throughthewireframe/facebook](https://atomcorp.github.io/throughthewireframe/facebook).
 
 ***
 
@@ -27,6 +27,7 @@ Thanks to [Tiffany Rayside](https://twitter.com/tmrdevelops), whos Codepen [Impe
 
 ### Todo list
 
+* link to relevant css and js files in readme and index
 * Add better readme introduction
 * Clean up, and polish facebook page
 * Make better image placeholder
