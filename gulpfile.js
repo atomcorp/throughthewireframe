@@ -101,7 +101,6 @@ gulp.task('js',function() {
             .pipe(concat('js.js'))
             // .pipe(gzip())
             .pipe(gulp.dest(paths.dist))
-            .pipe(gulp.dest(paths.distCompile));
     } else {
         return gulp.src([paths.jsPlugins, paths.jsSrc])
             .pipe(plumber({errorHandler: onError}))

@@ -101,7 +101,7 @@
 
 .box--submit {
 	background: $contrast;
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: $font;
 	cursor: pointer;
 	&:hover {
 		color: $contrast;
@@ -137,4 +137,11 @@
 
 .active .direction-arrow {
     transform: rotate(90deg);
+}
+
+// input & select don't inherit body font
+select, input, option {
+	font-family: $font;
+	font-weight: 800;
+	color: $color;
 }
