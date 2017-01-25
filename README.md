@@ -9,7 +9,14 @@ Simple CSS wireframing kit for quickly making hand drawn looking prototypes
 
 ## Why use Through the Wireframe?
 
-The benefit of Through the Wireframe is it doesn't care what you html, css or js is doing. You can build an early mockup or prototype for a client or boss, to demonstrate UI or a feature, but by using the kits classes you have a quick way of building a page that won't feature distracting design. This leaves you with lots more time for working on UI or adding JS transitions for example, but still be confident you'll have a visually understandable page for your demonstration.
+The benefit of Through the Wireframe is it doesn't care what your html, css or js is doing. 
+
+You can build an early mockup or prototype for a client or boss, to demonstrate UI or a feature using real HTML and JS. Rapidly prototype with flexbox and drop in something like jQuery or [Animate.css](https://daneden.github.io/animate.css/) for facier stuff. Or not. Through the Wireframe just gives you a quick way to ensure whatever you make *looks* like a prototype.
+
+Only tested on latest Chrome on Windows, so far.
+
+Wire CSS: [download here](https://github.com/atomcorp/throughthewireframe/blob/master/compile/wire.css)
+Wire JS (only for necessary for true random): [download here](https://raw.githubusercontent.com/atomcorp/throughthewireframe/master/compile/wire.js)
 
 ***
 
@@ -23,13 +30,10 @@ View an example of a complete example page (a facebook profile) at [https://atom
 
 ## Thanks
 
-Thanks to [Tiffany Rayside](https://twitter.com/tmrdevelops), whos Codepen [Imperfect Buttons](https://codepen.io/tmrDevelops/pen/VeRvKX) this is just a copy and extension of. And Kanye West.
+Big thanks and props to [Tiffany Rayside](https://twitter.com/tmrdevelops), whose Codepen [Imperfect Buttons](https://codepen.io/tmrDevelops/pen/VeRvKX) this is just an extension of. And Kanye.
 
 ### Todo list
 
-* link to relevant css and js files in readme and index
-* Add better readme introduction
 * Clean up, and polish facebook page
 * Make better image placeholder
-* Rename css classes, use .wire, .wire--round, .wire--js, wire--cray
 * Add some (free) icons, search icon, or provide examples of using them

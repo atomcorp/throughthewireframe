@@ -6,10 +6,14 @@
 	font-weight: 400;
 	color: #f1f2f3;
 	a {
-		color: #41403e;
+		color: #f1f2f3;
 		text-decoration: none;
+		padding: 4px 8px;
+		border: 2px solid;
 		&:hover {
-			border-bottom: 2px solid;
+			background: #f1f2f3;
+			color: #f98b58;
+			border-color: #f1f2f3;
 		}
 	}
 }
