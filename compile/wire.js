@@ -3,6 +3,12 @@ document.addEventListener('DOMContentLoaded', docReady, false);
 
 function docReady() {
 
+	// make this using jQuery?
+
+	// clean up a lot
+
+	
+
 	var throughTheWire = function() {
 
 	
@@ -29,7 +35,7 @@ function docReady() {
 
 		var settings = {
 
-			defaultClass: '.box--random',
+			defaultClass: '.wire--random',
 
 			classes: [],
 
@@ -51,7 +57,7 @@ function docReady() {
 
 			// get all the random boxes and assign them to domcache
 
-			domCache.boxes = document.querySelectorAll('.box--random');
+			domCache.boxes = document.querySelectorAll('.wire--random');
 
 			domCache.style = document.createElement('style');
 
@@ -75,9 +81,9 @@ function docReady() {
 
 			// use marker to create different type of points generator
 
-			if (document.querySelectorAll('.box--random').length > 0) {
+			if (document.querySelectorAll('.wire--random').length > 0) {
 
-				domCache.boxes.push(document.querySelectorAll('.box--random'));
+				domCache.boxes.push(document.querySelectorAll('.wire--random'));
 
 			} else if (document.querySelectorAll('.r__box--s').length > 0) {
 
@@ -109,7 +115,7 @@ function docReady() {
 
 		var _run = function() {
 
-			// create unique class names that we'll add the the .box--random elements
+			// create unique class names that we'll add the the .wire--random elements
 
 			_createClasses();
 
@@ -141,7 +147,7 @@ function docReady() {
 
 				var newClass = {};
 
-				newClass.name = 'box--random-' + i;
+				newClass.name = 'wire--random-' + i;
 
 				settings.classes.push(newClass);
 
