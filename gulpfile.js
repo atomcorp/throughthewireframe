@@ -66,29 +66,15 @@ gulp.task('sass', function () {
 });
 
 gulp.task('sassCompile', function () {
-    if (!inProduction) {
-        gulp.src(paths.sassCompile)
-            .pipe(plumber({errorHandler: onError}))
-            .pipe(sourcemaps.init())
-                .pipe(sass())
-                .pipe(autoprefixer({
-                    browsers: ['> 1%', 'IE 7'], 
-                    remove: true 
-                }))
-            .pipe(sourcemaps.write())
-            // .pipe(gzip())
-            .pipe(gulp.dest(paths.distCompile));
-    } else {
-        gulp.src(paths.sassCompile)
-            .pipe(plumber({errorHandler: onError}))
-            .pipe(sass({outputStyle: 'compressed'}))
-            .pipe(autoprefixer({
-                browsers: ['> 1%', 'IE 7'], 
-                remove: true 
-            }))
-        // .pipe(gzip())
-        .pipe(gulp.dest(paths.distCompile));
-    }
+    gulp.src(paths.sassCompile)
+        .pipe(plumber({errorHandler: onError}))
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(autoprefixer({
+            browsers: ['> 1%', 'IE 7'], 
+            remove: true 
+        }))
+    // .pipe(gzip())
+    .pipe(gulp.dest(paths.distCompile));
 });
 
 gulp.task('js',function() {
@@ -113,24 +99,13 @@ gulp.task('js',function() {
 });
 
 gulp.task('jsCompile',function() {
-    if (!inProduction) { // not in production
-        return gulp.src([paths.jsPlugins, paths.jsSrc])
-            .pipe(plumber({errorHandler: onError}))
-            // .pipe(jshint())
-            // .pipe(jshint.reporter(stylish))
-            .pipe(include())
-            .pipe(concat('wire.js'))
-            // .pipe(gzip())
-            .pipe(gulp.dest(paths.distCompile));
-    } else {
-        return gulp.src([paths.jsPlugins, paths.jsSrc])
-            .pipe(plumber({errorHandler: onError}))
-            .pipe(include())
-            .pipe(uglify())
-            .pipe(concat('wire.js'))
-            // .pipe(gzip())
-            .pipe(gulp.dest(paths.distCompile));
-    }
+    return gulp.src([paths.jsPlugins, paths.jsSrc])
+        .pipe(plumber({errorHandler: onError}))
+        .pipe(include())
+        .pipe(uglify())
+        .pipe(concat('wire.js'))
+        // .pipe(gzip())
+        .pipe(gulp.dest(paths.distCompile));
 });
 
 gulp.task('watch',function() {
