@@ -1,3 +1,5 @@
+> This is not maintained, at all! Check out [PaperCSS](https://github.com/papercss/papercss).
+
 # Through the Wireframe
 Simple CSS wireframing kit for quickly making hand drawn looking prototypes
 
